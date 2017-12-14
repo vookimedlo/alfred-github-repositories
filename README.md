@@ -11,6 +11,12 @@ Then, you could preview a selected repository content by pressing <kbd>⌘</kbd>
 
 ![alfred-github-repositories-menu](doc/images/alfred-repos-menu.png?raw=true "")
 
+Opening in default browser could be overridden, either by pressing the <kbd>⌘</kbd> key, or <kbd>⌥</kbd> key, or <kbd>⌃</kbd> key.
+
+- The first one - <key>⌘</key> - instructs workflow to copy a repository clone URL to clipboard.
+- The second one - <key>⌥</key> - instructs workflow to copy a repository CLI git clone command to clipboard.
+- The last one - <key>⌃</key> - instructs workflow to open a repository in GitHub Client.
+
 ![alfred-github-repositories-submenu](doc/images/alfred-repos-submenu.png?raw=true "")
 
 
