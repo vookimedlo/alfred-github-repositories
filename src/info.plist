@@ -402,9 +402,23 @@ for item in data:
     description = item['description']
     url = item['html_url']
     urlClone = item['clone_url']
+    starsCount = item['stargazers_count']
+    forksCount = item['forks_count']
 
     if query != "" and not queryPattern.search(str(title)):
         continue
+	
+	# Adding star ⭐🎖 and fork 🍴ᛘ
+    #
+    starPictogram = os.getenv('starPictogram') if os.getenv('starPictogram') else "🎖"
+    forkPictogram = os.getenv('forkPictogram') if os.getenv('forkPictogram') else "ᛘ"
+
+    if str(os.getenv('showStarStats')).lower() == 'true' and str(os.getenv('showForkStats')).lower() == 'true':
+        title = str(title) + " " + starPictogram + str(starsCount) + " " + forkPictogram + str(forksCount)
+    elif str(os.getenv('showStarStats')).lower() == 'true':
+        title = str(title) + " " + starPictogram + str(starsCount)
+    elif str(os.getenv('showForkStats')).lower() == 'true':
+        title = str(title) + " " + forkPictogram + str(forksCount)
 
     icon = "lock.png" if item["private"] else "icon.png"
 
@@ -915,8 +929,16 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 	</dict>
 	<key>variables</key>
 	<dict>
+		<key>forkPictogram</key>
+		<string>ᛘ</string>
 		<key>personalToken</key>
 		<string></string>
+		<key>showForkStats</key>
+		<string>true</string>
+		<key>showStarStats</key>
+		<string>true</string>
+		<key>starPictogram</key>
+		<string>🎖</string>
 		<key>user</key>
 		<string></string>
 	</dict>
@@ -926,7 +948,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2017.12.14</string>
+	<string>2017.12.19</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
