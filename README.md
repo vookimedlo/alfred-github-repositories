@@ -33,6 +33,8 @@ Optional settings:
 - `starPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `🎖`.
 - `forkPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `ᛘ`. 
 
+![alfred-github-repositories-submenu-stats](doc/images/alfred-repos-submenu-stats.png?raw=true "")
+
 [1]: https://www.alfredapp.com/
 [2]: https://github.com/vookimedlo/alfred-github-repositories/releases/latest
 [3]: https://github.com/settings/tokens
