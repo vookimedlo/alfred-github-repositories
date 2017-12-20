@@ -19,6 +19,7 @@ Opening in default browser could be overridden, either by pressing the <kbd>⌘<
 
 ![alfred-github-repositories-submenu](doc/images/alfred-repos-submenu.png?raw=true "")
 
+Repositories could be filtered by their names. Regular expressions (Python) are supported.
 
 ## Configuration
 Before the first usage, you are required to fill the workflow variables.
