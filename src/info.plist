@@ -382,6 +382,14 @@ import requests
 import sys
 from requests.auth import HTTPBasicAuth
 
+# 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
+# ⁰¹²³⁴⁵⁶⁷⁸⁹
+def toBetterNumbers(s):
+#    numbers = {'0': "𝟎", '1': "𝟏", '2': "𝟐", '3': "𝟑", '4': "𝟒", '5': "𝟓", '6': "𝟔", '7': "𝟕", '8': "𝟖", '9': "𝟗"}
+    numbers = {'0': "⁰", '1': "¹", '2': "²", '3': "³", '4': "⁴", '5': "⁵", '6': "⁶", '7': "⁷", '8': "⁸", '9': "⁹"}
+
+    return ''.join(numbers.get(char, char) for char in s)
+
 query = "{query}"
 queryPattern = re.compile(query, re.I)
 
@@ -407,6 +415,9 @@ for item in data:
 
     if query != "" and not queryPattern.search(str(title)):
         continue
+
+    starsCount = toBetterNumbers(str(starsCount))
+    forksCount = toBetterNumbers(str(forksCount))
 	
 	# Adding star ⭐🎖 and fork 🍴ᛘ
     #
@@ -948,7 +959,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2017.12.19</string>
+	<string>2017.12.20</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
