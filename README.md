@@ -31,7 +31,7 @@ Mandatory settings:
 Optional settings:
 - `showStarStats` instructs to show the Stars count for the given repository. By default, set to `true`,
 - `showForkStats` instructs to show the Forks count for the given repository. By default, set to `true`,
-- `starPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `🎖`.
+- `starPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `🎖`,
 - `forkPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `ᛘ`. 
 
 ![alfred-github-repositories-submenu-stats](doc/images/alfred-repos-submenu-stats.png?raw=true "")
