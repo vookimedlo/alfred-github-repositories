@@ -106,6 +106,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</key>
 		<array>
 			<dict>
@@ -166,7 +179,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</string>
+				<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -276,6 +289,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -293,23 +323,6 @@
 			<string>EC867843-290D-46F3-B505-5B14E18FBC75</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -359,6 +372,121 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import json
+import sys
+
+# Alfred menu items
+#
+alfreditems = {"items": []}
+sortkey = 0;
+title = "name"
+subtitle = "Order repositories by name."
+alfreditems['items'].append({
+                                "mysortkey": ++sortkey,
+                                "title": title,
+                                "subtitle": subtitle,
+                                "autocomplete": title,
+                                "arg": "",
+                                "variables": {
+                                    "orderBy": "^name^^",
+                                    "reversed": 0,
+                                    "autolearn": 1
+                                },
+                                "mods": {
+                                    "cmd": {
+                                        "valid": True,
+                                        "arg": "",
+                                        "subtitle": "Do not apply Alfred learning feature on repository list.",
+                                        "variables": {
+                                            "orderBy": "^name^^",
+                                            "reversed": 0,
+                                            "autolearn": 0
+                                        }
+                                    }
+                                }
+                            })
+
+title = "stars"
+subtitle = "Order repositories by stars count."
+alfreditems['items'].append({
+                            "mysortkey": ++sortkey,
+                            "title": title,
+                            "subtitle": subtitle,
+                            "autocomplete": title,
+                            "arg": "",
+                            "variables": {
+                            "orderBy": "^stars^^",
+                            "reversed": 1,
+                            "autolearn": 0
+                            }
+                            })
+
+title = "forks"
+subtitle = "Order repositories by forks count."
+alfreditems['items'].append({
+                            "mysortkey": ++sortkey,
+                            "title": title,
+                            "subtitle": subtitle,
+                            "autocomplete": title,
+                            "arg": "",
+                            "variables": {
+                            "orderBy": "^forks^^",
+                            "reversed": 1,
+                            "autolearn": 0
+                            }
+                            })
+
+# Sort Repositories
+#
+lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=False)
+dump = json.dumps({'items': lines}, indent=4)
+
+sys.stdout.write(dump)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>order by ...</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>68</integer>
@@ -385,9 +513,9 @@ from requests.auth import HTTPBasicAuth
 # 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
 # ⁰¹²³⁴⁵⁶⁷⁸⁹
 def toBetterNumbers(s):
-#    numbers = {'0': "𝟎", '1': "𝟏", '2': "𝟐", '3': "𝟑", '4': "𝟒", '5': "𝟓", '6': "𝟔", '7': "𝟕", '8': "𝟖", '9': "𝟗"}
+    #    numbers = {'0': "𝟎", '1': "𝟏", '2': "𝟐", '3': "𝟑", '4': "𝟒", '5': "𝟓", '6': "𝟔", '7': "𝟕", '8': "𝟖", '9': "𝟗"}
     numbers = {'0': "⁰", '1': "¹", '2': "²", '3': "³", '4': "⁴", '5': "⁵", '6': "⁶", '7': "⁷", '8': "⁸", '9': "⁹"}
-
+    
     return ''.join(numbers.get(char, char) for char in s)
 
 query = "{query}"
@@ -402,24 +530,30 @@ auth = HTTPBasicAuth(user, token)
 response = requests.get(url, auth=auth)
 data = json.loads(response.text)
 
+
 alfreditems = {"items": []}
 
 for item in data:
     title = item['name']
-    mysortkey = title.lower()
     description = item['description']
     url = item['html_url']
     urlClone = item['clone_url']
     starsCount = item['stargazers_count']
     forksCount = item['forks_count']
-
+    
     if query != "" and not queryPattern.search(str(title)):
         continue
+    
+    mysortkey = str(title).lower()
+    if os.getenv('orderBy') == "^stars^^":
+        mysortkey = starsCount
+    elif os.getenv('orderBy') == "^forks^^":
+        mysortkey = forksCount
 
     starsCount = toBetterNumbers(str(starsCount))
     forksCount = toBetterNumbers(str(forksCount))
-	
-	# Adding star ⭐🎖 and fork 🍴ᛘ
+
+    # Adding star ⭐🎖 and fork 🍴ᛘ
     #
     starPictogram = os.getenv('starPictogram') if os.getenv('starPictogram') else "🎖"
     forkPictogram = os.getenv('forkPictogram') if os.getenv('forkPictogram') else "ᛘ"
@@ -430,43 +564,45 @@ for item in data:
         title = str(title) + " " + starPictogram + str(starsCount)
     elif str(os.getenv('showForkStats')).lower() == 'true':
         title = str(title) + " " + forkPictogram + str(forksCount)
-
+    
     icon = "lock.png" if item["private"] else "icon.png"
-
+    autolearn = "" if os.getenv('autolearn') == "0" else title
+    
     # Alfred menu items
     #
     alfreditems['items'].append({
-        "mysortkey": mysortkey,
-        "uid": title,
-        "title": title,
-        "subtitle": description,
-        "autocomplete": title,
-        "arg": url,
-        "icon": {
-            "path": icon
-        },
-        "mods": {
-             "cmd": {
-                 "valid": True,
-                 "arg": urlClone,
-                 "subtitle": "Copy a repository clone URL"
-             },
-             "alt": {
-                 "valid": True,
-                 "arg": "git clone " + urlClone,
-                 "subtitle": "Copy a repository clone command"
-             },
-             "ctrl": {
-                 "valid": True,
-                 "arg": "x-github-client://openRepo/" + url,
-                 "subtitle": "Open repository in GitHub client"
-             }
-        }
-    })
+                                "mysortkey": mysortkey,
+                                "uid": autolearn,
+                                "title": title,
+                                "subtitle": description,
+                                "autocomplete": title,
+                                "arg": url,
+                                "icon": {
+                                "path": icon
+                                },
+                                "mods": {
+                                "cmd": {
+                                "valid": True,
+                                "arg": urlClone,
+                                "subtitle": "Copy a repository clone URL"
+                                },
+                                "alt": {
+                                "valid": True,
+                                "arg": "git clone " + urlClone,
+                                "subtitle": "Copy a repository clone command"
+                                },
+                                "ctrl": {
+                                "valid": True,
+                                "arg": "x-github-client://openRepo/" + url,
+                                "subtitle": "Open repository in GitHub client"
+                                }
+                                }
+                                })
 
 # Sort Repositories
 #
-lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=False)
+reversed = False if os.getenv('reversed') == "0" else True
+lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=reversed)
 dump = json.dumps({'items': lines}, indent=4)
 
 sys.stdout.write(dump)
@@ -586,13 +722,13 @@ echo -n "{query}"</string>
 			<key>config</key>
 			<dict>
 				<key>inputstring</key>
-				<string>{query}</string>
+				<string>{var:orderBy}</string>
 				<key>matchcasesensitive</key>
 				<false/>
 				<key>matchmode</key>
-				<integer>0</integer>
+				<integer>2</integer>
 				<key>matchstring</key>
-				<string></string>
+				<string>^\^.+?\^\^$</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
@@ -638,25 +774,6 @@ echo -n "{query}"</string>
 			<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^http</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>9038FB32-0418-4438-BE2A-65AE4AB67E53</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -751,6 +868,25 @@ fi</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<false/>
+				<key>matchmode</key>
+				<integer>2</integer>
+				<key>matchstring</key>
+				<string>^http</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>9038FB32-0418-4438-BE2A-65AE4AB67E53</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>See https://github.com/vookimedlo/alfred-github-repositories
@@ -765,7 +901,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - token not set</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>780</integer>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
@@ -774,7 +910,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>930</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>500</integer>
 		</dict>
@@ -785,7 +921,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check for error</string>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>670</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -796,7 +932,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - display gists</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>780</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -807,7 +943,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - open gist in browser</string>
 			<key>xpos</key>
-			<integer>930</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -818,7 +954,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>OneUpdater</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>780</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -827,7 +963,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1160</integer>
+			<integer>1270</integer>
 			<key>ypos</key>
 			<integer>500</integer>
 		</dict>
@@ -836,7 +972,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>930</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
@@ -847,7 +983,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check url</string>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>530</integer>
 		</dict>
@@ -858,9 +994,20 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check for error</string>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>670</integer>
 			<key>ypos</key>
 			<integer>220</integer>
+		</dict>
+		<key>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>GitHubRepositories - order by ...</string>
+			<key>xpos</key>
+			<integer>230</integer>
+			<key>ypos</key>
+			<integer>340</integer>
 		</dict>
 		<key>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</key>
 		<dict>
@@ -869,7 +1016,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check variables</string>
 			<key>xpos</key>
-			<integer>230</integer>
+			<integer>440</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -880,7 +1027,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check url</string>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -889,7 +1036,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1160</integer>
+			<integer>1270</integer>
 			<key>ypos</key>
 			<integer>200</integer>
 		</dict>
@@ -911,7 +1058,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check for error</string>
 			<key>xpos</key>
-			<integer>510</integer>
+			<integer>670</integer>
 			<key>ypos</key>
 			<integer>70</integer>
 		</dict>
@@ -922,7 +1069,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - user not set</string>
 			<key>xpos</key>
-			<integer>630</integer>
+			<integer>780</integer>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
@@ -933,7 +1080,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - check content</string>
 			<key>xpos</key>
-			<integer>820</integer>
+			<integer>970</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -959,7 +1106,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2017.12.20</string>
+	<string>2018.1.13</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
