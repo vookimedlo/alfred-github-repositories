@@ -8,6 +8,19 @@
 	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
+		<key>158939B6-039D-4FCB-B139-FA7FDF26EEA4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>52DCB10A-0936-4710-9FFB-8E52F14410E7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1DE501EA-83DF-478D-9799-21F3886AF363</key>
 		<array>
 			<dict>
@@ -67,6 +80,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>619718FC-BA2A-4C67-AB97-778315E91004</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>769906E4-A979-4017-8B03-36C556F0193B</key>
 		<array>
 			<dict>
@@ -84,7 +110,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
+				<string>619718FC-BA2A-4C67-AB97-778315E91004</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -162,11 +188,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C3473880-17C0-44CA-8219-ABA5DC96328B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>769906E4-A979-4017-8B03-36C556F0193B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>52DCB10A-0936-4710-9FFB-8E52F14410E7</string>
+				<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -205,7 +244,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>769906E4-A979-4017-8B03-36C556F0193B</string>
+				<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -268,27 +307,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Username hasn't been set yet</string>
-				<key>title</key>
-				<string>GitHub Repositories</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>F5FD00A5-9BC1-4219-9F4C-BBCACBBA3D77</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -300,6 +318,33 @@
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -327,19 +372,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
+				<key>lastpathcomponent</key>
 				<false/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>/user-not-set^^^</string>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Username hasn't been set yet</string>
+				<key>title</key>
+				<string>GitHub Repositories</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</string>
+			<string>F5FD00A5-9BC1-4219-9F4C-BBCACBBA3D77</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -365,117 +412,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
 				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
+				<key>matchmode</key>
 				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>2</integer>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>import json
-import sys
-
-# Alfred menu items
-#
-alfreditems = {"items": []}
-sortkey = 0;
-title = "name"
-subtitle = "Order repositories by name."
-alfreditems['items'].append({
-                                "mysortkey": ++sortkey,
-                                "title": title,
-                                "subtitle": subtitle,
-                                "autocomplete": title,
-                                "arg": "",
-                                "variables": {
-                                    "orderBy": "^name^^",
-                                    "reversed": 0,
-                                    "autolearn": 1
-                                },
-                                "mods": {
-                                    "cmd": {
-                                        "valid": True,
-                                        "arg": "",
-                                        "subtitle": "Do not apply Alfred learning feature on repository list.",
-                                        "variables": {
-                                            "orderBy": "^name^^",
-                                            "reversed": 0,
-                                            "autolearn": 0
-                                        }
-                                    }
-                                }
-                            })
-
-title = "stars"
-subtitle = "Order repositories by stars count."
-alfreditems['items'].append({
-                            "mysortkey": ++sortkey,
-                            "title": title,
-                            "subtitle": subtitle,
-                            "autocomplete": title,
-                            "arg": "",
-                            "variables": {
-                            "orderBy": "^stars^^",
-                            "reversed": 1,
-                            "autolearn": 0
-                            }
-                            })
-
-title = "forks"
-subtitle = "Order repositories by forks count."
-alfreditems['items'].append({
-                            "mysortkey": ++sortkey,
-                            "title": title,
-                            "subtitle": subtitle,
-                            "autocomplete": title,
-                            "arg": "",
-                            "variables": {
-                            "orderBy": "^forks^^",
-                            "reversed": 1,
-                            "autolearn": 0
-                            }
-                            })
-
-# Sort Repositories
-#
-lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=False)
-dump = json.dumps({'items': lines}, indent=4)
-
-sys.stdout.write(dump)
-</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>order by ...</string>
-				<key>type</key>
-				<integer>3</integer>
-				<key>withspace</key>
-				<false/>
+				<key>matchstring</key>
+				<string>/user-not-set^^^</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
+			<string>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -503,6 +454,7 @@ sys.stdout.write(dump)
 				<key>script</key>
 				<string>#!/usr/bin/python
 
+import io
 import json
 import os
 import re
@@ -515,7 +467,7 @@ from requests.auth import HTTPBasicAuth
 def toBetterNumbers(s):
     #    numbers = {'0': "𝟎", '1': "𝟏", '2': "𝟐", '3': "𝟑", '4': "𝟒", '5': "𝟓", '6': "𝟔", '7': "𝟕", '8': "𝟖", '9': "𝟗"}
     numbers = {'0': "⁰", '1': "¹", '2': "²", '3': "³", '4': "⁴", '5': "⁵", '6': "⁶", '7': "⁷", '8': "⁸", '9': "⁹"}
-    
+
     return ''.join(numbers.get(char, char) for char in s)
 
 query = "{query}"
@@ -523,13 +475,21 @@ queryPattern = re.compile(query, re.I)
 
 user = os.getenv('user')
 token = os.getenv('personalToken')
+cache = os.getenv('cache')
 
-url = 'https://api.github.com/user/repos?page=1&amp;per_page=1000'
-auth = HTTPBasicAuth(user, token)
-
-response = requests.get(url, auth=auth)
-data = json.loads(response.text)
-
+# Just a very simple caching
+#
+if os.path.isfile(cache) and os.path.getsize(cache) == 0:
+    url = 'https://api.github.com/user/repos?page=1&amp;per_page=1000'
+    auth = HTTPBasicAuth(user, token)
+    response = requests.get(url, auth=auth)
+    data = json.loads(response.text)
+    with io.open(cache, 'w', encoding='utf8') as cacheFile:
+        dumpedData = json.dumps(data, ensure_ascii=False)
+        cacheFile.write(unicode(dumpedData))
+else:
+    with io.open(cache, 'r', encoding='utf8') as cacheFile:
+        data = json.loads(cacheFile.read())
 
 alfreditems = {"items": []}
 
@@ -540,10 +500,10 @@ for item in data:
     urlClone = item['clone_url']
     starsCount = item['stargazers_count']
     forksCount = item['forks_count']
-    
+
     if query != "" and not queryPattern.search(str(title)):
         continue
-    
+
     mysortkey = str(title).lower()
     if os.getenv('orderBy') == "^stars^^":
         mysortkey = starsCount
@@ -564,10 +524,10 @@ for item in data:
         title = str(title) + " " + starPictogram + str(starsCount)
     elif str(os.getenv('showForkStats')).lower() == 'true':
         title = str(title) + " " + forkPictogram + str(forksCount)
-    
+
     icon = "lock.png" if item["private"] else "icon.png"
     autolearn = "" if os.getenv('autolearn') == "0" else title
-    
+
     # Alfred menu items
     #
     alfreditems['items'].append({
@@ -594,7 +554,7 @@ for item in data:
                                 "ctrl": {
                                 "valid": True,
                                 "arg": "x-github-client://openRepo/" + url,
-                                "subtitle": "Open repository in GitHub client"
+                                "subtitle": "Open a repository in GitHub client"
                                 }
                                 }
                                 })
@@ -681,6 +641,156 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import json
+import sys
+import tempfile
+
+cache = tempfile.mkstemp()[1]
+
+# Alfred menu items
+#
+alfreditems = {"items": []}
+sortkey = 0;
+title = "name"
+subtitle = "Order repositories by name."
+alfreditems['items'].append({
+    "mysortkey": ++sortkey,
+    "title": title,
+    "subtitle": subtitle,
+    "autocomplete": title,
+    "arg": "",
+    "variables": {
+        "orderBy": "^name^^",
+        "reversed": 0,
+        "autolearn": 1,
+        "cache": cache
+        },
+        "mods": {
+            "cmd": {
+                "valid": True,
+                "arg": "",
+                "subtitle": "Do not apply Alfred learning feature on repository list.",
+                "variables": {
+                    "orderBy": "^name^^",
+                    "reversed": 0,
+                    "autolearn": 0,
+                    "cache": cache
+
+                    }
+                }
+            }
+    })
+
+title = "stars"
+subtitle = "Order repositories by stars count."
+alfreditems['items'].append({
+    "mysortkey": ++sortkey,
+    "title": title,
+    "subtitle": subtitle,
+    "autocomplete": title,
+    "arg": "",
+    "variables": {
+        "orderBy": "^stars^^",
+        "reversed": 1,
+        "autolearn": 0,
+        "cache": cache
+        }
+    })
+
+title = "forks"
+subtitle = "Order repositories by forks count."
+alfreditems['items'].append({
+    "mysortkey": ++sortkey,
+    "title": title,
+    "subtitle": subtitle,
+    "autocomplete": title,
+    "arg": "",
+    "variables": {
+        "orderBy": "^forks^^",
+        "reversed": 1,
+        "autolearn": 0,
+        "cache": cache
+        }
+    })
+
+# Sort Repositories
+#
+lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=False)
+dump = json.dumps({'items': lines}, indent=4)
+
+sys.stdout.write(dump)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>order by ...</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>if [ -z ${user} ]; then echo -n "/user-not-set^^^"; exit 0;  fi
 if [ -z ${personalToken} ]; then echo -n "/token-not-set^^^"; exit 0;  fi
 
@@ -736,44 +846,6 @@ echo -n "{query}"</string>
 			<string>3A2F0E29-2F86-4310-ABF2-0C40465E43FD</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Clone URL is in your clipboard.</string>
-				<key>title</key>
-				<string>GitHub Repositories</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5FA305E2-4A8C-4399-9C36-398D771065AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -871,6 +943,71 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Clone URL is in your clipboard.</string>
+				<key>title</key>
+				<string>GitHub Repositories</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5FA305E2-4A8C-4399-9C36-398D771065AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>619718FC-BA2A-4C67-AB97-778315E91004</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>inputstring</key>
 				<string>{query}</string>
 				<key>matchcasesensitive</key>
@@ -905,12 +1042,23 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>ypos</key>
 			<integer>40</integer>
 		</dict>
+		<key>158939B6-039D-4FCB-B139-FA7FDF26EEA4</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>GitHubRepositories - remove a cached file</string>
+			<key>xpos</key>
+			<integer>1080</integer>
+			<key>ypos</key>
+			<integer>340</integer>
+		</dict>
 		<key>1DE501EA-83DF-478D-9799-21F3886AF363</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1260</integer>
 			<key>ypos</key>
 			<integer>500</integer>
 		</dict>
@@ -943,7 +1091,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - open gist in browser</string>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1260</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -956,14 +1104,25 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>xpos</key>
 			<integer>780</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>500</integer>
 		</dict>
 		<key>5FA305E2-4A8C-4399-9C36-398D771065AA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1270</integer>
+			<integer>1450</integer>
+			<key>ypos</key>
+			<integer>500</integer>
+		</dict>
+		<key>619718FC-BA2A-4C67-AB97-778315E91004</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>GitHubRepositories - remove a cached file</string>
+			<key>xpos</key>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>500</integer>
 		</dict>
@@ -972,9 +1131,9 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1260</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 		</dict>
 		<key>9038FB32-0418-4438-BE2A-65AE4AB67E53</key>
 		<dict>
@@ -1020,6 +1179,17 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
+		<key>C3473880-17C0-44CA-8219-ABA5DC96328B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>note</key>
+			<string>GitHubRepositories - remove a cached file</string>
+			<key>xpos</key>
+			<integer>1080</integer>
+			<key>ypos</key>
+			<integer>190</integer>
+		</dict>
 		<key>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</key>
 		<dict>
 			<key>colorindex</key>
@@ -1036,9 +1206,9 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1270</integer>
+			<integer>1450</integer>
 			<key>ypos</key>
-			<integer>200</integer>
+			<integer>190</integer>
 		</dict>
 		<key>EFF111D9-9DDB-446B-8308-2527E99252C7</key>
 		<dict>
@@ -1082,7 +1252,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>xpos</key>
 			<integer>970</integer>
 			<key>ypos</key>
-			<integer>230</integer>
+			<integer>220</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
