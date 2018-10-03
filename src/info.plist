@@ -618,7 +618,7 @@ end run</string>
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>keyword</key>
-				<string>repos</string>
+				<string>{var:keyword}</string>
 				<key>subtext</key>
 				<string>Shows your repositories and opens them in WebBrowser</string>
 				<key>text</key>
@@ -1259,6 +1259,8 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 	<dict>
 		<key>forkPictogram</key>
 		<string>ᛘ</string>
+		<key>keyword</key>
+		<string>repos</string>
 		<key>personalToken</key>
 		<string></string>
 		<key>showForkStats</key>
