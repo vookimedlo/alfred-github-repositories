@@ -257,7 +257,7 @@
 	<key>createdby</key>
 	<string>Michal Duda</string>
 	<key>description</key>
-	<string>Alfred 3 workflow for opening your GitHub Repositories in your default browser.</string>
+	<string>Alfred 3 workflow for opening your GitHub Repositories either in your default browser or in GitHub Desktop.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -1278,7 +1278,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2018.1.13</string>
+	<string>2018.10.03</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
