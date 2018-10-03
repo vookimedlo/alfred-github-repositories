@@ -29,10 +29,11 @@ Mandatory settings:
 - `personalToken` is your Github Personal Token created in your [user settings][3]. If you want to show your private repositories, not just the public ones, select the `repo scope` during the personal token generation.
 
 Optional settings:
-- `showStarStats` instructs to show the Stars count for the given repository. By default, set to `true`,
-- `showForkStats` instructs to show the Forks count for the given repository. By default, set to `true`,
-- `starPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `🎖`,
-- `forkPictogram` is a unicode pictogram for showing a Star count statistics. By default, set to `ᛘ`. 
+- `keyword` contains the main workflow keyword, which is used to start this workflow. By default, it's set to `repos`,
+- `showStarStats` instructs to show the Stars count for the given repository. By default, it's set to `true`,
+- `showForkStats` instructs to show the Forks count for the given repository. By default, it's set to `true`,
+- `starPictogram` is a unicode pictogram for showing a Star count statistics. By default, it's set to `🎖`,
+- `forkPictogram` is a unicode pictogram for showing a Star count statistics. By default, it's set to `ᛘ`. 
 
 ![alfred-github-repositories-submenu-stats](doc/images/alfred-repos-submenu-stats.png?raw=true "")
 
