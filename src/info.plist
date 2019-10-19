@@ -21,6 +21,21 @@
 				<false/>
 			</dict>
 		</array>
+		<key>16414EC3-985B-42F3-A998-718EB90B89C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>FCC6C317-7297-48DE-8391-81D94008BB70</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>1DE501EA-83DF-478D-9799-21F3886AF363</key>
 		<array>
 			<dict>
@@ -34,24 +49,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3A2F0E29-2F86-4310-ABF2-0C40465E43FD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>3D83604F-42DF-4921-B9E7-946F833B4CEA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>3D83604F-42DF-4921-B9E7-946F833B4CEA</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F91DB756-CA8D-48A4-B526-30AC54D8EBF7</string>
+				<string>642568F7-9CAC-4E1F-B611-00A7AFD17B09</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
@@ -61,7 +63,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</string>
+				<string>16414EC3-985B-42F3-A998-718EB90B89C8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -71,7 +73,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>9038FB32-0418-4438-BE2A-65AE4AB67E53</string>
+				<string>76E1A3BC-9E80-44BC-9619-1A047C104F62</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -93,6 +95,21 @@
 				<false/>
 			</dict>
 		</array>
+		<key>642568F7-9CAC-4E1F-B611-00A7AFD17B09</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B1364253-D6DA-409E-A6C5-5EEF03CFDEE4</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>769906E4-A979-4017-8B03-36C556F0193B</key>
 		<array>
 			<dict>
@@ -106,7 +123,7 @@
 				<false/>
 			</dict>
 		</array>
-		<key>9038FB32-0418-4438-BE2A-65AE4AB67E53</key>
+		<key>76E1A3BC-9E80-44BC-9619-1A047C104F62</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -115,12 +132,26 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>86D16A6E-1CDA-49CC-8499-ED5CE31EC009</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 		</array>
-		<key>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</key>
+		<key>93A954F4-7F0A-487E-8817-B7CEDA98A621</key>
 		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>10BF19E8-25C0-4D4B-8AF4-1910DEDB15A1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4AE0EA24-A58F-4492-A08F-CAAA705C3F29</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>F5FD00A5-9BC1-4219-9F4C-BBCACBBA3D77</string>
@@ -128,6 +159,20 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BB0DE62D-7BF6-4C4A-9002-0768F4750A01</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3D83604F-42DF-4921-B9E7-946F833B4CEA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>0E074B63-6431-47F2-A0B5-569282EEA2BC</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -149,27 +194,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F1232220-E014-4916-AC8B-3A03E133F257</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>3A2F0E29-2F86-4310-ABF2-0C40465E43FD</string>
+				<string>93A954F4-7F0A-487E-8817-B7CEDA98A621</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -201,19 +226,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>EFF111D9-9DDB-446B-8308-2527E99252C7</key>
 		<array>
 			<dict>
@@ -227,37 +239,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F1232220-E014-4916-AC8B-3A03E133F257</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>10BF19E8-25C0-4D4B-8AF4-1910DEDB15A1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>F91DB756-CA8D-48A4-B526-30AC54D8EBF7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Michal Duda</string>
 	<key>description</key>
-	<string>Alfred 3 workflow for opening your GitHub Repositories either in your default browser or in GitHub Desktop.</string>
+	<string>Alfred 4 workflow for opening your GitHub Repositories either in your default browser or in the GitHub Desktop.</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -274,7 +260,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Personal Token hasn't been set yet</string>
+				<string>Personal Token hasn't been set yet!</string>
 				<key>title</key>
 				<string>GitHub Repositories</string>
 			</dict>
@@ -282,25 +268,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>10BF19E8-25C0-4D4B-8AF4-1910DEDB15A1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>/token-not-set^^^</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>F1232220-E014-4916-AC8B-3A03E133F257</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -319,7 +286,7 @@
 			<key>uid</key>
 			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -358,7 +325,7 @@ echo -n "{query}"</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Git clone command is in your clipboard.</string>
+				<string>Git Clone Command is in your clipboard.</string>
 				<key>title</key>
 				<string>GitHub Repositories</string>
 			</dict>
@@ -379,7 +346,7 @@ echo -n "{query}"</string>
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>Username hasn't been set yet</string>
+				<string>Username hasn't been set yet!</string>
 				<key>title</key>
 				<string>GitHub Repositories</string>
 			</dict>
@@ -393,38 +360,88 @@ echo -n "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^git</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>/token-not-set^^^</string>
+						<key>outputlabel</key>
+						<string>token not set</string>
+						<key>uid</key>
+						<string>4AE0EA24-A58F-4492-A08F-CAAA705C3F29</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>/user-not-set^^^</string>
+						<key>outputlabel</key>
+						<string>user not set</string>
+						<key>uid</key>
+						<string>BB0DE62D-7BF6-4C4A-9002-0768F4750A01</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:orderBy}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^\^.+?\^\^$</string>
+						<key>outputlabel</key>
+						<string>no error</string>
+						<key>uid</key>
+						<string>0E074B63-6431-47F2-A0B5-569282EEA2BC</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>do nothing</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>F91DB756-CA8D-48A4-B526-30AC54D8EBF7</string>
+			<string>93A954F4-7F0A-487E-8817-B7CEDA98A621</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>/user-not-set^^^</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^git</string>
+						<key>outputlabel</key>
+						<string>command to clipboard</string>
+						<key>uid</key>
+						<string>B1364253-D6DA-409E-A6C5-5EEF03CFDEE4</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>do nothing</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</string>
+			<string>642568F7-9CAC-4E1F-B611-00A7AFD17B09</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -435,6 +452,8 @@ echo -n "{query}"</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -454,13 +473,23 @@ echo -n "{query}"</string>
 				<key>script</key>
 				<string>#!/usr/bin/python
 
+################################################################
+# License: GPLv3
+# Author: Michal Duda &lt;github@vookimedlo.cz&gt;
+# Home: https://github.com/vookimedlo/alfred-github-repositories
+# Project: alfred-github-repositories
+#
+################################################################
+
+import Queue
+import base64
 import io
 import json
 import os
 import re
 import sys
-import base64
 import urllib2
+
 
 # 𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗
 # ⁰¹²³⁴⁵⁶⁷⁸⁹
@@ -469,6 +498,7 @@ def toBetterNumbers(s):
     numbers = {'0': "⁰", '1': "¹", '2': "²", '3': "³", '4': "⁴", '5': "⁵", '6': "⁶", '7': "⁷", '8': "⁸", '9': "⁹"}
 
     return ''.join(numbers.get(char, char) for char in s)
+
 
 query = "{query}"
 queryPattern = re.compile(query, re.I)
@@ -480,10 +510,33 @@ cache = os.getenv('cache')
 # Just a very simple caching
 #
 if os.path.isfile(cache) and os.path.getsize(cache) == 0:
+    data = []
     url = 'https://api.github.com/user/repos?page=1&amp;per_page=1000'
     auth = {'Authorization': 'Basic ' + base64.b64encode(user + ':' + token)}
-    response = urllib2.urlopen(urllib2.Request(url, headers=auth)).read()
-    data = json.loads(response)
+
+    linkPattern = re.compile('&lt;(https://[^&gt;]+)&gt;\s*;\s*rel="next"')
+
+    queue = Queue.Queue()
+    queue.put(url)
+
+    while not queue.empty():
+        queuedUrl = queue.get()
+        response = urllib2.urlopen(urllib2.Request(queuedUrl, headers=auth))
+        header = response.info()
+        content = response.read()
+        partialData = json.loads(content)
+
+        # Join multiple json data
+        #
+        for i in xrange(0, len(partialData)):
+            data.append(partialData[i])
+
+        if 'link' in header.dict:
+            link = header.dict['link']
+            result = linkPattern.search(link)
+            if result:
+                queue.put(result.group(1))
+
     with io.open(cache, 'w', encoding='utf8') as cacheFile:
         dumpedData = json.dumps(data, ensure_ascii=False)
         cacheFile.write(unicode(dumpedData))
@@ -531,38 +584,38 @@ for item in data:
     # Alfred menu items
     #
     alfreditems['items'].append({
-                                "mysortkey": mysortkey,
-                                "uid": autolearn,
-                                "title": title,
-                                "subtitle": description,
-                                "autocomplete": title,
-                                "arg": url,
-                                "icon": {
-                                "path": icon
-                                },
-                                "mods": {
-                                "cmd": {
-                                "valid": True,
-                                "arg": urlClone,
-                                "subtitle": "Copy a repository clone URL"
-                                },
-                                "alt": {
-                                "valid": True,
-                                "arg": "git clone " + urlClone,
-                                "subtitle": "Copy a repository clone command"
-                                },
-                                "ctrl": {
-                                "valid": True,
-                                "arg": "x-github-client://openRepo/" + url,
-                                "subtitle": "Open a repository in GitHub client"
-                                }
-                                }
-                                })
+        "mysortkey": mysortkey,
+        "uid": autolearn,
+        "title": title,
+        "subtitle": description,
+        "autocomplete": title,
+        "arg": url,
+        "icon": {
+            "path": icon
+        },
+        "mods": {
+            "cmd": {
+                "valid": True,
+                "arg": urlClone,
+                "subtitle": "Copy a repository clone URL"
+            },
+            "alt": {
+                "valid": True,
+                "arg": "git clone " + urlClone,
+                "subtitle": "Copy a repository clone command"
+            },
+            "ctrl": {
+                "valid": True,
+                "arg": "x-github-client://openRepo/" + url,
+                "subtitle": "Open a repository in GitHub client"
+            }
+        }
+    })
 
 # Sort Repositories
 #
-reversed = False if os.getenv('reversed') == "0" else True
-lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=reversed)
+reversedFlag = False if os.getenv('reversed') == "0" else True
+lines = sorted(alfreditems['items'], key=lambda k: k['mysortkey'], reverse=reversedFlag)
 dump = json.dumps({'items': lines}, indent=4)
 
 sys.stdout.write(dump)
@@ -585,7 +638,7 @@ sys.stdout.write(dump)
 			<key>uid</key>
 			<string>3D83604F-42DF-4921-B9E7-946F833B4CEA</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -620,7 +673,7 @@ end run</string>
 				<key>keyword</key>
 				<string>{var:keyword}</string>
 				<key>subtext</key>
-				<string>Shows your repositories and opens them in WebBrowser</string>
+				<string>Shows your repositories and opens them in a WebBrowser</string>
 				<key>text</key>
 				<string>GitHub Repositories</string>
 				<key>withspace</key>
@@ -667,6 +720,8 @@ echo -n "{query}"</string>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -684,7 +739,17 @@ echo -n "{query}"</string>
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>import json
+				<string>#!/usr/bin/python
+
+################################################################
+# License: GPLv3
+# Author: Michal Duda &lt;github@vookimedlo.cz&gt;
+# Home: https://github.com/vookimedlo/alfred-github-repositories
+# Project: alfred-github-repositories
+#
+################################################################
+
+import json
 import sys
 import tempfile
 
@@ -781,7 +846,7 @@ sys.stdout.write(dump)
 			<key>uid</key>
 			<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -812,38 +877,30 @@ echo -n "{query}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^http|^x-github-client</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^http|^x-github-client</string>
+						<key>outputlabel</key>
+						<string>open in ...</string>
+						<key>uid</key>
+						<string>FCC6C317-7297-48DE-8391-81D94008BB70</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>do nothing</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:orderBy}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^\^.+?\^\^$</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>3A2F0E29-2F86-4310-ABF2-0C40465E43FD</string>
+			<string>16414EC3-985B-42F3-A998-718EB90B89C8</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1003,24 +1060,35 @@ echo -n "{query}"</string>
 			<key>uid</key>
 			<string>1DE501EA-83DF-478D-9799-21F3886AF363</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{query}</string>
-				<key>matchcasesensitive</key>
-				<false/>
-				<key>matchmode</key>
-				<integer>2</integer>
-				<key>matchstring</key>
-				<string>^http</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>4</integer>
+						<key>matchstring</key>
+						<string>^http</string>
+						<key>outputlabel</key>
+						<string>url to clipboard</string>
+						<key>uid</key>
+						<string>86D16A6E-1CDA-49CC-8499-ED5CE31EC009</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>do nothing</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>9038FB32-0418-4438-BE2A-65AE4AB67E53</string>
+			<string>76E1A3BC-9E80-44BC-9619-1A047C104F62</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1049,36 +1117,34 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - remove a cached file</string>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1375</integer>
 			<key>ypos</key>
 			<integer>340</integer>
+		</dict>
+		<key>16414EC3-985B-42F3-A998-718EB90B89C8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>1010</integer>
+			<key>ypos</key>
+			<integer>375</integer>
 		</dict>
 		<key>1DE501EA-83DF-478D-9799-21F3886AF363</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1260</integer>
+			<integer>1555</integer>
 			<key>ypos</key>
 			<integer>500</integer>
-		</dict>
-		<key>3A2F0E29-2F86-4310-ABF2-0C40465E43FD</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check for error</string>
-			<key>xpos</key>
-			<integer>670</integer>
-			<key>ypos</key>
-			<integer>370</integer>
 		</dict>
 		<key>3D83604F-42DF-4921-B9E7-946F833B4CEA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>note</key>
-			<string>GitHubRepositories - display gists</string>
+			<string>GitHubRepositories - display repositories</string>
 			<key>xpos</key>
 			<integer>780</integer>
 			<key>ypos</key>
@@ -1089,9 +1155,9 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>note</key>
-			<string>GitHubRepositories - open gist in browser</string>
+			<string>GitHubRepositories - open repo in browser</string>
 			<key>xpos</key>
-			<integer>1260</integer>
+			<integer>1555</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -1111,7 +1177,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>colorindex</key>
 			<integer>6</integer>
 			<key>xpos</key>
-			<integer>1450</integer>
+			<integer>1745</integer>
 			<key>ypos</key>
 			<integer>500</integer>
 		</dict>
@@ -1122,40 +1188,45 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - remove a cached file</string>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1375</integer>
 			<key>ypos</key>
 			<integer>500</integer>
+		</dict>
+		<key>642568F7-9CAC-4E1F-B611-00A7AFD17B09</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>5</integer>
+			<key>xpos</key>
+			<integer>1010</integer>
+			<key>ypos</key>
+			<integer>225</integer>
 		</dict>
 		<key>769906E4-A979-4017-8B03-36C556F0193B</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1260</integer>
+			<integer>1555</integer>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
-		<key>9038FB32-0418-4438-BE2A-65AE4AB67E53</key>
+		<key>76E1A3BC-9E80-44BC-9619-1A047C104F62</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check url</string>
 			<key>xpos</key>
-			<integer>970</integer>
+			<integer>1010</integer>
 			<key>ypos</key>
-			<integer>530</integer>
+			<integer>535</integer>
 		</dict>
-		<key>90DF95FE-FD71-4D95-9DEF-374E3FFF9C8C</key>
+		<key>93A954F4-7F0A-487E-8817-B7CEDA98A621</key>
 		<dict>
 			<key>colorindex</key>
-			<integer>1</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check for error</string>
+			<integer>9</integer>
 			<key>xpos</key>
-			<integer>670</integer>
+			<integer>615</integer>
 			<key>ypos</key>
-			<integer>220</integer>
+			<integer>195</integer>
 		</dict>
 		<key>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</key>
 		<dict>
@@ -1186,27 +1257,16 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>note</key>
 			<string>GitHubRepositories - remove a cached file</string>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1375</integer>
 			<key>ypos</key>
 			<integer>190</integer>
-		</dict>
-		<key>C3E506E4-3A41-423D-ABDD-2E35BF9DC87E</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check url</string>
-			<key>xpos</key>
-			<integer>970</integer>
-			<key>ypos</key>
-			<integer>370</integer>
 		</dict>
 		<key>EC867843-290D-46F3-B505-5B14E18FBC75</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1450</integer>
+			<integer>1745</integer>
 			<key>ypos</key>
 			<integer>190</integer>
 		</dict>
@@ -1221,17 +1281,6 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
-		<key>F1232220-E014-4916-AC8B-3A03E133F257</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>1</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check for error</string>
-			<key>xpos</key>
-			<integer>670</integer>
-			<key>ypos</key>
-			<integer>70</integer>
-		</dict>
 		<key>F5FD00A5-9BC1-4219-9F4C-BBCACBBA3D77</key>
 		<dict>
 			<key>colorindex</key>
@@ -1242,17 +1291,6 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 			<integer>780</integer>
 			<key>ypos</key>
 			<integer>190</integer>
-		</dict>
-		<key>F91DB756-CA8D-48A4-B526-30AC54D8EBF7</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>5</integer>
-			<key>note</key>
-			<string>GitHubRepositories - check content</string>
-			<key>xpos</key>
-			<integer>970</integer>
-			<key>ypos</key>
-			<integer>220</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
@@ -1278,7 +1316,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2018.10.14</string>
+	<string>2019.10.19</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
