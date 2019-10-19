@@ -1,5 +1,5 @@
 # alfred-github-repositories
-[Alfred 3][1] workflow for opening your GitHub Repositories in your default browser.
+[Alfred 4][1] workflow for opening your GitHub Repositories in your default browser.
 
 # Installation
 1) Install [alfred-github-repositories][2] workflow.
