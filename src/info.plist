@@ -274,50 +274,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># remove a cached file
-#
-if [ ! -z ${cache} ]; then rm "${cache}"; fi
-
-echo -n "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -356,6 +312,52 @@ echo -n "{query}"</string>
 			<string>F5FD00A5-9BC1-4219-9F4C-BBCACBBA3D77</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>C3473880-17C0-44CA-8219-ABA5DC96328B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>769906E4-A979-4017-8B03-36C556F0193B</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -444,6 +446,33 @@ echo -n "{query}"</string>
 			<string>642568F7-9CAC-4E1F-B611-00A7AFD17B09</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -621,15 +650,15 @@ dump = json.dumps({'items': lines}, indent=4)
 sys.stdout.write(dump)
 </string>
 				<key>scriptargtype</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>github.py</string>
 				<key>subtext</key>
 				<string>Shows your repositories and opens them in WebBrowser</string>
 				<key>title</key>
 				<string>GitHub Repositories</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -694,9 +723,8 @@ end run</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string># remove a cached file
-#
-if [ ! -z ${cache} ]; then rm "${cache}"; fi
+				<string>if [ -z ${user} ]; then echo -n "/user-not-set^^^"; exit 0;  fi
+if [ -z ${personalToken} ]; then echo -n "/token-not-set^^^"; exit 0;  fi
 
 echo -n "{query}"</string>
 				<key>scriptargtype</key>
@@ -709,7 +737,7 @@ echo -n "{query}"</string>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>158939B6-039D-4FCB-B139-FA7FDF26EEA4</string>
+			<string>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -831,13 +859,13 @@ sys.stdout.write(dump)
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>order_by.py</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
 				<string>order by ...</string>
 				<key>type</key>
-				<integer>3</integer>
+				<integer>8</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -847,32 +875,6 @@ sys.stdout.write(dump)
 			<string>9C5C20D3-4297-4E0E-9A6C-E978B6A9524B</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>if [ -z ${user} ]; then echo -n "/user-not-set^^^"; exit 0;  fi
-if [ -z ${personalToken} ]; then echo -n "/token-not-set^^^"; exit 0;  fi
-
-echo -n "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9F1EBFFB-363A-481D-AA5C-3489DE9794BC</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -903,6 +905,54 @@ echo -n "{query}"</string>
 			<string>16414EC3-985B-42F3-A998-718EB90B89C8</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Clone URL is in your clipboard.</string>
+				<key>title</key>
+				<string>GitHub Repositories</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5FA305E2-4A8C-4399-9C36-398D771065AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string># remove a cached file
+#
+if [ ! -z ${cache} ]; then rm "${cache}"; fi
+
+echo -n "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>619718FC-BA2A-4C67-AB97-778315E91004</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1000,58 +1050,12 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>Clone URL is in your clipboard.</string>
-				<key>title</key>
-				<string>GitHub Repositories</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5FA305E2-4A8C-4399-9C36-398D771065AA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string># remove a cached file
-#
-if [ ! -z ${cache} ]; then rm "${cache}"; fi
-
-echo -n "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>619718FC-BA2A-4C67-AB97-778315E91004</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
@@ -1316,7 +1320,7 @@ Icons taken from https://octicons.github.com/ - MIT License</string>
 		<string>user</string>
 	</array>
 	<key>version</key>
-	<string>2019.10.19</string>
+	<string>2022.02.20</string>
 	<key>webaddress</key>
 	<string>https://github.com/vookimedlo/alfred-github-repositories</string>
 </dict>
